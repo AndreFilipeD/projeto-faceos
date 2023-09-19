@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
     #facename{
         width: 40%;
+        margin-bottom: -10vw;
     }
     #anilogo{
-        width: 20%;
-        
+        width: 15%;
+        margin-bottom: -5vw;
     }
     header{
         width: 130vw;
@@ -17,12 +18,12 @@
 @media screen and (min-width: 1200px){
     #facename{
         width: 30%;
-        margin-left: -4vw;
+        margin-left: -7vw;
     }
     #anilogo{
         margin-bottom: 1vw;
         margin-top: 4vw;
-        margin-left: -3vw;
+        margin-left: -8vw;
         width: 30%;
     }
     header{
