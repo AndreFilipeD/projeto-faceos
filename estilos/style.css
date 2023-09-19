@@ -41,6 +41,7 @@ header{
     position: fixed;
     margin-top: -410px;
     margin-left: -20px;
+    overflow: hidden;
 
     width: 115vw;
     height: 300px;
