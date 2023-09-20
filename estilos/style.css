@@ -4,9 +4,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 
+/*
+width="485" height="402"
+800 > 650
+*/
+
 :root{
-    --primary-color: #ffee00;
-    --secondary-color: #2e2e2e;
+    --primary-color: #ffe500;
+    --secondary-color: #1a1a1a;
     --test: red;
 }
 *{
@@ -22,29 +27,30 @@ body{
     overflow-x: hidden;
 }
 #anilogo{
-    width: 180px;
-    margin-top: calc(110px - 10vw/5);
-    margin-left: 50px;
+    margin-top: calc(160px - ((100vw) * 0.04));
+    margin-left: 20px;
+    width: calc(37px + ((5vw) * 0.75));
+    height: calc(37px + ((5vw) * 0.75));
     transition: .2s;
 }
 #facename{
-    margin-top: 80px;
+    margin-top: 130px;
     margin-left: 3vw;
-    width: calc(200px  + 10vw/3);
+    width: calc(120px  + 10vw/3);
 }
 header{
     background-color: var(--primary-color);
     outline: 10px solid var(--secondary-color);
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.678);
+    box-shadow: 0px 0px 40px #ffe600ce;
 
     display: flex;
     position: fixed;
-    margin-top: -410px;
+    margin-top: -250px;
     margin-left: -20px;
     overflow: hidden;
 
     width: 115vw;
-    height: 300px;
+    height: 200px;
     
     transform: rotate(-4deg);
 
@@ -54,40 +60,49 @@ header{
     background-color: white;
     border-radius: 20px;
 
-    margin: 300px auto 10vw auto;
+    margin: 100px auto 10vw auto;
     
-    padding: 30px;
+    padding: 0px;
 
     width: 90vw;
-    height: 2000px;
+    height: fit-content;
 
     z-index: 1;
 }
 article{
-
+    display: block;
+    justify-content: center;
+    justify-items: center;
 }
+.container{
+    background-color: white;
+    display: flex;
+    
+}
+.utility{
+    margin: auto;
+    background-color: var(--primary-color);
+    height: fit-content;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 5px;
+}
+
 article > p{
-    /*font-family: 'Neucha', cursive;
-    text-indent: 30px;
-    font-weight: bold;
-    font-size: 2em;
-    line-height: 28px;
-    text-align: justify;*/
     text-indent: 30px;
     font-size: 2em;
     line-height: 28px;
     text-align: justify;
-
+    padding: 50px;
 }
 article > h1{
-    /*font-family: 'Bungee', cursive;
-    text-align: center;
-    font-size: 2.5em;
-    width: 80vw;*/
     font-family: 'Neucha', cursive;
     text-align: center;
     font-size: 4em;
     width: 80vw;
+    padding: 20px;
 }
 footer{
     margin-top: auto;
