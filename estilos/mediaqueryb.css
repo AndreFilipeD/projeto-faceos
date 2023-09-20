@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*
+@media screen and (max-width: 768px){
+}
+*/
+@media screen and (max-height:700px){
+    #facename{
+        margin-top: calc(155px - ((100vw) * 0.021));
+        margin-left: 22px;
+        width: calc(60px + ((5vw) * 0.50));
+        height: calc(60px + ((5vw) * 0.50));
+    }
+    #anilogo{
+        margin-top: calc(180px - ((100vw) * 0.021));
+        margin-left: 22px;
+        width: calc(9px + ((5vw) * 0.50));
+        height: calc(9px + ((5vw) * 0.50));
+    }
+    header{
+        margin-top: -370px;
+        transform: rotate(-2deg)
+    }
+}
+/*
+@media screen and (min-width: 1200px){
+}
+*/

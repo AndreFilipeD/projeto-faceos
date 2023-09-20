@@ -33,10 +33,10 @@ outras
 
 :root{
     --primary-color: #ffe500;
-    --secondary-color: #412192;
+    --secondary-color: #000000;
     
-    --title-color: #3b3b3b;
-    --text-color :#4b4b4b;
+    --title-color: #ffffff;
+    --text-color :#ffffff;
 
     --test: red;
 }
@@ -74,7 +74,6 @@ body{
 header{
     background-color: var(--primary-color);
     outline: 10px solid black;
-    box-shadow: 0px 0px 40px #ffe500ce;
 
     display: flex;
     position: fixed;
@@ -90,9 +89,9 @@ header{
     z-index: 3;
 }
 .background{
-    background-image: url(../imagens/ruidowhite.png);
-    /*background-color: white;*/
-    border-radius: 20px;
+    /*background-image: url(../imagens/ruidowhite.png);*/
+    background-color: #ffffff42;
+    border-radius: 5px;
     box-shadow: 0px 0px 10px #000000ce;
     /*box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.473);*/
 
@@ -110,10 +109,31 @@ article{
     justify-content: center;
     justify-items: center;
 }
+article > p{
+    text-indent: 30px;
+    font-size: calc(10px + (3vw / 3));
+    line-height: calc(16px + (3vw / 3));
+    text-align: justify;
+    padding: calc(2vw / 0.65) calc(3vw / 0.65) ;
+    font-weight: 500;
+    color: var(--text-color);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.685);
+}
+article > h1{
+    font-family: 'Bungee', cursive;
+    text-align: center;
+    font-size: calc(40px + (3vw / 3));
+    line-height: calc(45px + (3vw / 3));
+    margin: auto;
+    max-width: 700px;
+    padding: 50px 20px 0px 20px;
+    color: var(--title-color);
+    border-bottom: 7px solid white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.685);
+}
 .container{
     background-color: transparent;
     display: flex;
-    
 }
 .utility{
     margin: auto;
@@ -124,31 +144,13 @@ article{
     justify-content: center;
     justify-items: center;
     border-radius: 5px;
-}
-
-article > p{
-    text-indent: 30px;
-    font-size: calc(10px + (3vw / 3));
-    line-height: calc(16px + (3vw / 3));
-    text-align: justify;
-    padding: calc(2vw / 0.65) calc(3vw / 0.65) ;
-    font-weight: 500;
-    color: var(--text-color);
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.685);
-}
-article > h1{
-    font-family: 'Neucha', cursive;
-    text-align: center;
-    font-size: calc(30px + (3vw / 3));
-    padding-top: 20px;
-    color: var(--title-color);
+    outline: 10px solid black;
 }
 footer{
     margin-top: auto;
     padding: 100px 50px;
     background-color: var(--primary-color);
     outline: 10px solid black;
-    box-shadow: 20px 0px 40px #ffe500ce;
     /*color: #ffffff;*/
     
 }
