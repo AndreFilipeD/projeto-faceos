@@ -1,54 +1,27 @@
 @charset "UTF-8";
 /*
 @media screen and (max-width: 768px){
-    #facename{
-        width: 40%;
-        margin-bottom: -10vw;
-    }
-    #anilogo{
-        width: 15%;
-        margin-bottom: -5vw;
-    }
-    header{
-        width: 130vw;
-        transform: rotate(4deg)
-    }
 }
-
+*/
 @media screen and (max-height:700px){
-    header{
-        height: 30vh;
-    }
     #facename{
-        width: 15%;
-        margin-left: 5vw;
-        margin-bottom: -0.9vw;
+        margin-top: calc(155px - ((100vw) * 0.021));
+        margin-left: 22px;
+        width: calc(60px + ((5vw) * 0.50));
+        height: calc(60px + ((5vw) * 0.50));
     }
     #anilogo{
-        margin-bottom: 1vw;
-        margin-top: 13vw;
-        margin-left: 5vw;
-        min-width: 10vw;
-
+        margin-top: calc(180px - ((100vw) * 0.021));
+        margin-left: 22px;
+        width: calc(9px + ((5vw) * 0.50));
+        height: calc(9px + ((5vw) * 0.50));
     }
     header{
-        transform: rotate(-6deg)
+        margin-top: -370px;
+        transform: rotate(-2deg)
     }
 }
-
+/*
 @media screen and (min-width: 1200px){
-    #facename{
-        width: 25%;
-        margin-left: -7vw;
-    }
-    #anilogo{
-        margin-bottom: 1vw;
-        margin-top: 4vw;
-        margin-left: -8vw;
-        width: 30%;
-    }
-    header{
-        transform: rotate(-5deg)
-    }
 }
 */
